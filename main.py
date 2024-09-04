@@ -1,15 +1,20 @@
-"""Módulo que define as classes para uso de aplicações no método ASCII.
+"""
+Módulo que define as classes para uso de aplicações no método ASCII.
 
-    Classes:
-        AsciiMeta: Classe abstrata que define os métodos.
-        StyleAscii: Classe concreta que aplica os métodos herdados de
-            AsciiMeta.
+Classes:
+    AsciiMeta: Classe abstrata que define os métodos.
+    StyleAscii: Classe concreta que aplica os métodos herdados de
+        AsciiMeta.
 
-    Importações:
-        abc: usar o decorador de abstração e a classe abstrata herdar de ABC.
-        ASCII_Codes.color: módulo com os codes das cores ascii.
-        ASCII_Codes.negative: módulo com o valor unitário da cor.
+Importações:
+    abc: usar o decorador de abstração e a classe abstrata herdar de ABC.
+    ASCII_Codes.color: módulo com os codes das cores ascii.
+    ASCII_Codes.negative: módulo com o valor unitário da cor.
 
+Executável:
+    Quando o módulo é executado diretamente, ele demonstra a funcionalidade
+    da classe `StyleAscii` aplicando diferentes estilos de formatação (cor,
+    negrito, sublinhado e negativo) ao texto "Anderson" e exibindo o resultado.
 """
 from abc import ABC, abstractmethod
 from ascii_codes.color import color_ascii
@@ -72,7 +77,3 @@ if __name__ == "__main__":
     print(name)
     name.negative_ascii()
     print(name)
-    
-    novo_nome = StyleAscii()
-    novo_nome.bold_ascii()
-    print(novo_nome)
